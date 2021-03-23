@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'Muller';
+    src: url('../fonts/MullerMedium.woff2') format('woff2'),
+      url('../fonts/MullerMedium.woff') format('woff');
+    font-display: swap;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+@font-face {
+    font-family: 'Muller';
+    src: url('../fonts/MullerRegular.woff2') format('woff2'),
+      url('../fonts/MullerRegular.woff') format('woff');
+    font-display: swap;
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Muller';
+    src: url('../fonts/MullerBold.woff2') format('woff2'),
+      url('../fonts/MullerBold.woff') format('woff');
+    font-display: swap;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Muller';
+    src: url('../fonts/MullerLight.woff2') format('woff2'),
+      url('../fonts/MullerLight.woff') format('woff');
+    font-display: swap;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  html {
+    font-family: "Muller", sans-serif;
+    background-color: #E5E5E5;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+
+  :root {
+    --orange: #CC9933;
+    --grey: #666;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+  ul {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+  }
+
+  .container {
+      max-width: 1170px;
+      margin: 0 auto;
+  }
+
+  .btn {
+      padding: 13px 20px;
+      color: var(--orange);
+      border: 1px solid var(--orange);
+      border-radius: 10px;
+      background: transparent;
+      transition: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  }
+
+  .btn:hover {
+      cursor: pointer;
+      color: white;
+      background-color: var(--orange);
+  }
+
+  .header_links {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 30px;
+  }
+
+  .left_links {
+      display: flex;
+      align-items: center;
+  }
+
+  .logo {
+      margin-right: 34px;
+  }
+
+  .login_link {
+      padding-left: 35px;
+      color: var(--orange);
+      background-image: url('/img/login.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+  }
+
+  .phone_link {
+      color: var(--grey);
+      font-size: 20px;
+      font-weight: 500;
+  }
+
+  .nav {
+      display: flex;
+      justify-content: space-between;
+      background-color: white;
+      border-radius: 15px;
+  }
+
+  .nav_list {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 63%;
+      padding-right: 10px;
+  }
+
+  .nav_link {
+      color: var(--grey);
+  }
+
+  .button_container {
+      padding: 14px 45px 14px 57px;
+      border-left: 1px solid #e1e1e1;
+  }
+
+  .btn_get-tour {
+      margin-right: 30px;
+  }
