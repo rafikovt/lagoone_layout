@@ -64,6 +64,10 @@
       margin: 0 auto;
   }
 
+  .description {
+    line-height: 2;
+  }
+
   .btn {
       padding: 13px 20px;
       color: var(--orange);
@@ -116,6 +120,7 @@
   .nav {
       display: flex;
       justify-content: space-between;
+      padding: 14px 0;
       background-color: white;
       border-radius: 15px;
   }
@@ -133,8 +138,9 @@
   }
 
   .button_container {
-      padding: 14px 45px 14px 57px;
-      border-left: 1px solid #e1e1e1;
+    padding-right: 45px;
+    padding-left: 57px;
+    border-left: 1px solid #e1e1e1;
   }
 
   .btn_get-tour {
@@ -154,31 +160,34 @@
   .offer-large {
     width: 50%;
     padding: 40px;
-    background-image: url('/img/offer-large.png');
+    background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%),
+    url('/img/offer-large.png');
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 15px;
-
   }
 
   .offer-small-1 {
     margin-bottom: 23px;
-    background-image: url('/img/offer-1.png');
+    background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%),
+    url('/img/offer-1.png');
   }
 
   .offer-small-2 {
-    background-image: url('/img/offer-2.png');
+    background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%),
+    url('/img/offer-2.png');
   }
 
   .offer-article {
-    height: 48%;
     padding: 40px;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 15px;
   }
-
+  
   .offer-article-title {
+    margin-top: 0;
+    margin-bottom: 15px;
     font-size: 40px;
     font-weight: 700;
     color: #fff;
@@ -190,4 +199,96 @@
     font-weight: 400;
   }
 
-  
+  .offer-title-big {
+    font-size: 60px;
+    color: #fff;
+  }
+
+  .offer-description-container {
+    padding-right: 190px;
+  }
+
+.offer-article, .offer-large {
+  display: flex;
+  align-items: flex-end;
+}
+
+.offer-description {
+  margin-bottom: 47px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.offer-link, .services-item-link {
+  padding-right: 15px;
+  color: var(--orange);
+  background-image: url(/img/link.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.offer-title-big {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.offers {
+  margin-bottom: 70px;
+}
+
+.description-large {
+  font-size: 30px;
+}
+
+.about-us-description {
+  padding-right: 282px;
+}
+
+.about-us {
+  margin-bottom: 70px;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.services-list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 330px;
+  width: 48%;
+  padding: 45px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 15px 15px 0 0;
+}
+
+.services-list-item:nth-child(1n) {
+  margin-right: 23px;
+}
+
+.services-item-first {
+  background-image: url('/img/services-1.png');
+}
+
+.services-item-second {
+  background-image: url('/img/services-2.png');
+}
+
+.services-item-third {
+  background-image: url('/img/services-3.png');
+}
+
+.services-item-fourth {
+  background-image: url('/img/services-4.png');
+}
+
+.services-item-description {
+  margin: 0;
+  padding-right: 70px;
+}
+
+
+
